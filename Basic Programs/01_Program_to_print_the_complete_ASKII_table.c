@@ -2,14 +2,14 @@
 #include<conio.h>
 int main()
 {
-    int askii = 0;
+    int ascii = 0;
     
-    printf("\n\t Your ASKII table is below => \n");
+    printf("\n\t Your ASCII table is below => \n");
 
-    while(askii<128)
+    while(ascii<128)
         {
-            printf("\t %3d = %c. \n",askii, askii);
-            ++askii;
+            printf("\t %3d = %c. \n",ascii, ascii);
+            ++ascii;
         }
     printf("\n\tThanks for visiting");    
 
