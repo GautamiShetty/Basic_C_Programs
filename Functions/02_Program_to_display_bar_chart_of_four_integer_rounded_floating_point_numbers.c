@@ -1,6 +1,26 @@
 #include<stdio.h>
 #include<conio.h>
 
+void round_off (float []);
+void bar_chart(int [],float*);
+
+int main()
+{
+    int i = 0;
+    float fnum[4] = {};
+
+    printf("\nEnter 4 floating numbers : ");
+
+    for(i = 0; i <= 3; i++)
+    {
+        printf("\nNumber %d : ",i+1);
+        scanf("%f",&fnum[i]);
+    } 
+    round_off(fnum);   
+    getch();
+    return 0;
+}
+
 void round_off (float fnum[])
 {
     int inum[4] = {0.0}, i = 0;
@@ -37,21 +57,5 @@ void bar_chart(int ino[],float *fno)
         printf("\n\n");
         k++;
     }
-}
-int main()
-{
-    int i = 0;
-    float fnum[4] = {};
-
-    printf("\nEnter 4 floating numbers : ");
-
-    for(i = 0; i <= 3; i++)
-    {
-        printf("\nNumber %d : ",i+1);
-        scanf("%f",&fnum[i]);
-    } 
-    round_off(fnum);   
-    getch();
-    return 0;
 }
 
