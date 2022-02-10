@@ -8,12 +8,21 @@ int main()
     scanf("%d", &inum);
 
     check_prime(inum);
+    
+    printf("\nThanks for visiting ");
     return 0;
 }
 
 void check_prime(int ino)
 {
     int i = 0;
+    
+    if(ino == 0||ino == 1)
+    {
+        printf("\n%d is not Prime Number",ino);
+        return;
+    }
+    
     for (i = 2; i <= ino / 2; i++)
     {
         if (ino % i == 0)
