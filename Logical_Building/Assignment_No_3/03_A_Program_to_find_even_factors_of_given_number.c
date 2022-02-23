@@ -10,7 +10,7 @@ int main()
 
     printf("\nEven Factors of %d : ",inum);
 
-    for(i = 1; i < inum/2 ; i++)
+    for(i = 1; i <= inum/2 ; i++)
     {
         if(inum % i == 0 && i % 2 == 0)
         {
