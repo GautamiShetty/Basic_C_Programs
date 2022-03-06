@@ -10,8 +10,10 @@ int MultFact(int ino)
         {
             multF *= i;
         }
+        
+        multF *= ino;
     }
-    return ino;
+    return multF;
 }
 
 int main()
